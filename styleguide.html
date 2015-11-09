@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>title</title>
+
+
+<link rel="shortcut icon" href="http://www.explorevr.org/sites/explorevr.org/themes/explorevr_boot/favicon.ico" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Work+Sans&effect=shadow-multiple">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <link href="css/custom.css" rel="stylesheet">
+
+
+   <style type="text/css">
+
+@import url(https://fonts.googleapis.com/css?family=Work+Sans&effect=shadow-multiple:400,300,500,700,900,100,600,800,200|Rubik&effect=shadow-multiple:400,500,700,700italic,500italic,400italic,300italic,300,900italic,900|Catamaran&effect=shadow-multiple:400,700,600,500,800,100,200,300,900|Yantramanav&effect=shadow-multiple:400,700,500,300,900,100|Pragati+Narrow&effect=shadow-multiple:400,700|Biryani&effect=shadow-multiple:400,300,600,700,800,900,200);
+
+
+/*
+font-family: 'Work Sans', sans-serif;
+
+font-family: 'Rubik', sans-serif;
+
+font-family: 'Catamaran', sans-serif;
+
+font-family: 'Yantramanav', sans-serif;
+
+font-family: 'Pragati Narrow', sans-serif;
+
+font-family: 'Biryani', sans-serif;
+
+*/
+	   /* Reset
+================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
+ol, ul { list-style: none }
+blockquote, q { quotes: none }
+:focus { outline: 0 }
+table { border-collapse: collapse; border-spacing: 0; }
+img { max-width: 100%; height: auto; }
+mark { background: none; }
+select { max-width: 100%; }
+
+body { background: #f6f6f6; margin:20px}
+body a { color: #D47600; text-decoration: none; }
+body a:hover {color: #005A8B; background-color:#A0CFEB;}
+
+
+
+  /* Typography
+================================================== */
+body {color: #777; font: 16px/1.6  -webkit-font-smoothing: antialiased; font-family: 'Catamaran', sans-serif;}
+
+/*
+.Header-font {font-family: 'Rubik', sans-serif!important;}
+.body-font {font-family:'Open Sans', sans-serif;}
+*/
+h1,h2,h3,h4,h5,h6 { font-weight: 700; color: #444; line-height: 1.4em; font-family: 'Work Sans', sans-serif!important;}
+
+h1 {
+  font-size: 2.00em;
+  margin: 0 0 20px;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.50em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1.10em;
+}
+
+h6 {
+  font-size: 1.05em;
+}
+p { margin: 0 0 20px }
+h1 a, h2 a, h3 a, h4 a { color: #D47600; }
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover { color: #005A8B; text-decoration: none; }
+em { font-style: italic }
+strong { font-weight: 600; color: #000; }
+small { font-size: 80% }
+hr { border: solid #eee; border-width: 1px 0 0; clear: both; height: 0; margin: 40px 0; }
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+  border:1px solid #ddd;
+  border-right:none;
+  background:#fff;
+}
+
+th {
+  font-family: 'Arvo', serif!important;
+  padding:10px 20px;
+  background:#555;
+  color:#fff;
+   font-size: 1.286em;
+  margin: 0 0 20px;
+
+}
+
+
+
+
+
+tr{
+  padding:10px 10px;
+}
+
+td{
+  padding:10px 20px;
+  border-top:1px solid #ddd;
+  border-right:1px solid #ddd;
+  width: 170px;}
+
+td+td {
+  width: auto;
+}
+
+tr .even {
+	color:#fff;
+	background-color: #ddd;}
+
+/* -------------- Form Elements  ------------- */
+
+form {marging:20px}
+
+fieldset { background: #ffffff; border: 1px solid #cccccc; margin-top: 10px; margin-bottom: 32px;
+padding: 0 0 10px; position: relative; top: 12px; /* Offsets the negative margin of legends */
+-khtml-border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+
+
+
+input { margin: 2px 0; padding: 4px; }
+
+input, textarea {  font-size: 0.929em; }
+
+textarea { line-height: 1.5; }
+
+ /*aligns*/
+.aligncenter { display: block; margin: 0 auto; }
+.alignright { float: right; margin: 0 0 10px 20px; }
+.alignleft { float: left; margin: 0 20px 10px 0; }
+/*floats*/
+.floatleft { float: left }
+.floatright { float: right }
+/*text style*/
+.textcenter { text-align: center }
+.textright { text-align: right }
+.textleft { text-align: left }
+
+
+/* Lists
+================================================== */
+ul, ol {
+  margin: 0 0 1em 1.5em;
+}
+ul {
+  list-style: disc;
+}
+ol {
+  list-style-type: decimal;
+}
+ol ol {
+  list-style: upper-alpha;
+}
+ol ol ol {
+  list-style: lower-roman;
+}
+ol ol ol ol {
+  list-style: lower-alpha;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-bottom: 0;
+}
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+  border:1px solid #ddd;
+  border-right:none;
+  background:#fff;
+}
+
+th {
+  font-weight: bold;
+  padding:10px 10px;
+  background:#555;
+  color:#fff;
+}
+
+tr{
+  padding:5px 5px;
+}
+
+td{
+  padding:5px 10px;
+  border-top:1px solid #ddd;
+  border-right:1px solid #ddd;
+}
+
+ /* Form Buttons */
+
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+/* IE10 */
+background-image: -ms-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%);
+/* Mozilla Firefox */
+background-image: -moz-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%);
+/* Opera */
+background-image: -o-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%);
+/* Webkit (Safari/Chrome 10) */
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #E3E3E3));
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%);
+/* Proposed W3C Markup */
+background-image: linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%);
+/* IE6-9 */
+filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E3E3E3');
+
+border: 1px solid #dbdbdb;
+-moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; -ms-border-radius: 6px; -khtml-border-radius: 6px; border-radius: 6px;
+-moz-box-shadow: inset 0 1px 0 0 white; -webkit-box-shadow: inset 0 1px 0 0 white; -o-box-shadow: inset 0 1px 0 0 white; box-shadow: inset 0 1px 0 0 white;
+color: #333333; text-shadow: 0 1px 0 white; position: relative; font-weight:bold; padding: 4px .8em 5px .8em; font-size: 13px; }
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+/* IE10 */
+background-image: -ms-linear-gradient(top, #DBDBDB 0%, #F2F2F2 100%);
+/* Mozilla Firefox */
+background-image: -moz-linear-gradient(top, #DBDBDB 0%, #F2F2F2 100%);
+/* Opera */
+background-image: -o-linear-gradient(top, #DBDBDB 0%, #F2F2F2 100%);
+/* Webkit (Safari/Chrome 10) */
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #DBDBDB), color-stop(1, #F2F2F2));
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(top, #DBDBDB 0%, #F2F2F2 100%);
+/* Proposed W3C Markup */
+background-image: linear-gradient(top, #DBDBDB 0%, #F2F2F2 100%);
+/* IE6-9 */
+filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#DBDBDB', endColorstr='#F2F2F2');
+
+-moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; -ms-border-radius: 6px; -khtml-border-radius: 6px; border-radius: 6px;
+-moz-box-shadow: inset 0 1px 0 0 white;
+-webkit-box-shadow: inset 0 1px 0 0 white;
+-o-box-shadow: inset 0 1px 0 0 white;
+box-shadow: inset 0 1px 0 0 white;
+cursor: pointer; }
+
+button.full-width,
+input[type="submit"].full-width,
+input[type="reset"].full-width,
+input[type="button"].full-width {
+width: 100%; padding-left: 0 !important; padding-right: 0 !important; text-align: center; }
+
+.socialbtn {
+	width:48px;
+	height:48px;
+	margin-right: 10px;
+	float: left;
+}
+
+
+
+nav{margin-bottom:40px!IMPORTANT;}
+#breadcrumbs-four{
+  overflow: hidden;
+  width: 100%;
+  font-size:.7em;
+  margin-top:60px;
+
+}
+
+#breadcrumbs-four li{list-style:none!important;}
+
+#breadcrumbs-four li{
+  float: left;
+  margin: 0 .5em 0 1em;
+}
+
+#breadcrumbs-four a{
+  background: #ddd;
+  padding: .7em 1em;
+  float: left;
+  text-decoration: none;
+  color: #444;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  position: relative;
+}
+
+#breadcrumbs-four a:hover{
+  background: #efc9ab;
+}
+
+#breadcrumbs-four a::before,
+#breadcrumbs-four a::after{
+  content:'';
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  width: 1em;
+  background: #ddd;
+  transform: skew(-20deg);
+}
+
+#breadcrumbs-four a::before{
+
+  left: -.5em;
+  border-radius: 2px 0 0 2px;
+}
+
+#breadcrumbs-four a:hover::before{
+  background: #efc9ab;
+}
+
+#breadcrumbs-four a::after{
+  right: -.5em;
+  border-radius: 0 2px 2px 0;
+}
+
+#breadcrumbs-four a:hover::after{
+  background: #efc9ab;
+}
+
+#breadcrumbs-four .current,
+#breadcrumbs-four .current:hover{
+  font-weight: bold;
+  background: none;
+}
+
+#breadcrumbs-four .current::after,
+#breadcrumbs-four .current::before{
+  content: normal;
+}
+
+
+
+ul.colors li {display:inline-block; padding-right:20px}
+</style>
+
+
+
+
+ </head>
+ <body>
+
+<!-- Beginning of Styleguide -->
+
+<h1>ExploreVR Styleguide</h1>
+
+<hr />
+<h2>Color Palete</h2>
+<div style="background-color:#fff; width:1024px">
+<svg version="1.1" id="Level_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1024px" height="200px" viewBox="0 0 1024 200" enable-background="new 0 0 1024 200" xml:space="preserve">
+
+<rect x="44" y="44" fill="#0075AD" width="100" height="100" />
+<rect x="144" y="44" fill="#FFCB04" width="100" height="100"/>
+<rect x="244" y="44" fill="#5D9632" width="100" height="100"/>
+<rect x="344" y="44" fill="#C92E39" width="100" height="100"/>
+<rect x="444" y="44" fill="#9BD4F3" width="100" height="100"/>
+<rect x="544" y="44" fill="#A6D38D" width="100" height="100"/>
+<rect x="644" y="44" fill="#D5D5D5" width="100" height="100"/>
+
+</svg>
+ <ul class="colors" style="padding-left:40px;display:inline-block;list-style-type:none">
+
+	 <li>#0075AD</li>
+	 <li> #FFCB04</li>
+	 <li>#5D9632</li>
+	<li>#C92E39</li>
+	<li> #9BD4F3</li>
+<li>#A6D38D</li>
+<li>#D5D5D5</li>
+</ul>
+</div>
+
+<h1><a href="#">Heading 1</a></h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+<hr />
+
+<h1>Headings with Text</h1>
+
+<h1>Heading 1</h1>
+<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+<h2>Heading 2</h2>
+<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+<h3>Heading 3</h3>
+<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+<h4>Heading 4</h4>
+<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+<h5>Heading 5</h5>
+<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+<h6>Heading 6</h6>
+<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+
+<hr />
+
+<h1>Block Elements</h1>
+
+<h2 id="paragraph">Paragraphs and Images</h2>
+
+<blockquote><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
+<p>Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.</p>
+<p><img alt="Placeholder Image and Some Alt Text" src="http://placehold.it/350x150" title="A title element for this placeholder image."></p>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
+
+<h2>Blockquote</h2>
+
+<p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+<blockquote>
+  "<strong>This is a blockquote.</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl."
+</blockquote>
+<p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+<h2>Figure-Caption</h2>
+
+<figure>
+  <img src="http://placehold.it/350x150" alt="A placeholder figure image." />
+  <figcaption>The figcaption element example</figcaption>
+</figure>
+
+<h2>Details-Summary</h2>
+
+<details>
+  <summary>The summary element example</summary>
+  <p>The details example text. It may be styled differently based on what browser or operating system you are using.</p>
+</details>
+
+<hr />
+
+<h1 id="text-elements">Text Elements</h1>
+
+<p>The <a href="#">a element</a> and <a href="http://example.com" target="_blank">a:hover</a> examples</p>
+<p>The <em>em element</em> example</p>
+<p>The <small>small element</small> example</p>
+<p>The <span>span element</span> example</p>
+<p>The <strong>strong element</strong> example</p>
+<p>The <u>u element</u> example</p>
+
+<hr />
+
+
+<h1>Breadcrumb</h1>
+
+
+<ul id="breadcrumbs-four">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Toolkits</a></li>
+  <li><a href="#">Workforce Toolkit</a></li>
+  <li><a href="#" class="current">Overview</a></li>
+</ul>
+
+<hr>
+<h1 id="list_types">List Types</h1>
+
+<h2>Ordered List</h2>
+<ol>
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3
+    <ol>
+      <li>List Item 3.1</li>
+      <li>List Item 3.2
+        <ol>
+          <li>List Item 3.2.1</li>
+          <li>List Item 3.2.2</li>
+        </ol>
+      </li>
+      <li>List Item 3.3</li>
+    </ol>
+  </li>
+  <li>List Item 4</li>
+</ol>
+
+<h2>Unordered List</h2>
+<ul>
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3
+    <ul>
+      <li>List Item 3.1</li>
+      <li>List Item 3.2
+        <ul>
+          <li>List Item 3.2.1</li>
+          <li>List Item 3.2.2</li>
+        </ul>
+      </li>
+      <li>List Item 3.3</li>
+    </ul>
+  </li>
+  <li>List Item 4</li>
+</ul>
+
+<h2>Definition List</h2>
+<dl>
+  <dt>Definition Term 1</dt>
+  <dd>Definition Description 1</dd>
+  <dt>Definition Term 2</dt>
+  <dd>Definition Description 2</dd>
+</dl>
+
+<hr />
+
+<h1 id="tables">Tables</h1>
+
+<table cellspacing="0" cellpadding="0">
+  <caption>This is a table caption</caption>
+  <thead>
+    <tr>
+      <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+    </tr>
+    <tr class="even">
+      <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+    </tr>
+    <tr>
+      <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+    </tr>
+    <tr>
+      <td colspan="3">A row with a cell spanning all 3 columns</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Table Footer 1</th><th>Table Footer 2</th><th>Table Footer 3</th>
+    </tr>
+  </tfoot>
+</table>
+
+<hr />
+
+<h1 id="form_elements">Media and Form Elements</h1>
+
+<p>This last section contains elements that don't render well in markdown. Please consult the final section in <a href="https://github.com/bryanbraun/poor-mans-styleguide/blob/gh-pages/index.html">index.html</a>, to see the rest of the styleguide.</p>
+
+<h2>Media</h2>
+
+<h3>The Audio Element:</h3>
+<audio controls>
+  <source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg" />
+  <source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+
+<h3>The Video Element:</h3>
+<video width="320" height="240" controls>
+  <source src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4" />
+  <source src="http://www.w3schools.com/tags/movie.ogg" type="video/ogg" />
+  Your browser does not support the video tag.
+</video>
+
+<h3>Embedded content:</h3>
+
+<p>YouTube video (iframe):</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/l4f9QF0SGuQ" frameborder="0" allowfullscreen></iframe>
+
+<h2>Form Elements</h2>
+
+<p>The Fieldset:</p>
+<fieldset>
+  <legend>Legend</legend>
+
+  <p>The Form:</p>
+
+  <form>
+    <p><label for="text_field">Text Field:</label><br />
+      <input type="text" id="text_field" />
+    </p>
+
+    <p><label for="text_field_disabled">Disabled Text Field:</label><br />
+      <input type="text" id="text_field_disabled" disabled value="I'm disabled" />
+    </p>
+
+    <p><label for="text_field_readonly">Readonly Text Field:</label><br />
+      <input type="text" id="text_field_readonly" readonly value="I'm readonly" />
+    </p>
+
+    <p><label for="text_area">Text Area:</label><br />
+      <textarea id="text_area"></textarea>
+    </p>
+
+    <p><label for="text_area_disabled">Disabled Text Area:</label><br />
+      <textarea id="text_area_disabled" disabled>I'm disabled</textarea>
+    </p>
+
+    <p><label for="text_area">Readonly Text Area:</label><br />
+      <textarea id="text_area" readonly>I'm readonly</textarea>
+    </p>
+
+    <p><label for="select_element">Select Element:</label><br />
+      <select id="select_element">
+        <optgroup label="Option Group 1">
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </optgroup>
+        <optgroup label="Option Group 2">
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3" disabled>Disabled Option</option>
+        </optgroup>
+      </select>
+    </p>
+
+    <p><label for="select_element_disabled">Disabled Select Element:</label><br/>
+      <select id="select_element_disabled" disabled>
+        <option value="1">Unselectable Option</option>
+        <option value="2">This option should not even be seen</option>
+      </select>
+    </p>
+
+    <p>Radio Buttons:<br />
+      <label><input type="radio" class="radio" name="radio_button" value="radio_1" /> Radio 1</label><br/>
+      <label><input type="radio" class="radio" name="radio_button" value="radio_2" /> Radio 2</label><br/>
+      <label><input type="radio" class="radio" name="radio_button" value="radio_3" /> Radio 3</label><br/>
+      <label><input type="radio" class="radio" name="radio_button" value="radio_4" disabled /> Radio Disabled</label><br/>
+    </p>
+
+    <p>Checkboxes:<br />
+      <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> Checkbox 1</label><br/>
+      <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /> Checkbox 2</label><br/>
+      <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /> Checkbox 3</label><br/>
+      <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_4" disabled /> Checkbox Disabled</label><br/>
+    </p>
+
+    <p><label for="password">Password:</label><br />
+      <input type="password" class="password" id="password" />
+    </p>
+
+    <p><label for="file">File Input:</label><br />
+      <input type="file" class="file" id="file" />
+    </p>
+
+    <h3>HTML5-specific Form Elements</h3>
+
+<div style="width:350px;">
+    <p><label for="email">Email:</label><br />
+      <input type="email" id="email" />
+    </p>
+
+    <p><label   for="url">URL:</label><br />
+      <input  type="url" id="url" />
+    </p>
+
+    <p><label   for="tel">Telephone:</label><br />
+      <input  type="tel" id="tel" />
+    </p>
+
+    <p><label for="number">Number:</label><br />
+      <input type="number" id="number" min="0" max="10" step="1" value="5" />
+    </p>
+
+    <p><label for="search">Search:</label><br />
+      <input type="search" id="search" />
+    </p>
+
+    <p><label for="date">Date:</label><br />
+      <input type="date" id="date" />
+    </p>
+
+    <p><label for="time">Time:</label><br />
+      <input type="time" id="time" />
+    </p>
+
+    <p><label for="color">Color:</label><br />
+      <input type="color" id="color" />
+    </p>
+</div>
+    <p><label for="datalist">Datalist:</label><br />
+      <input list="browsers" name="browser" type="datalist" id="datalist" />
+      <datalist id="browsers">
+        <option value="Internet Explorer" />
+        <option value="Firefox" />
+        <option value="Chrome" />
+        <option value="Opera" />
+        <option value="Safari" />
+      </datalist>
+    </p>
+
+    <p><label for="range">Range:</label><br />
+      <input type="range" id="range" name="points" min="1" max="10" />
+    </p>
+
+    <p><label for="output">Output:</label><br />
+      <output name="result" id="output">42</output>
+    </p>
+
+    <p><label for="progress">Progress:</label><br />
+      <progress id="progress" value="65" max="100"></progress>
+    </p>
+
+    <p><label for="meter">Meter:</label><br />
+      <meter id="meter" min="200" max="500" value="350">350 degrees</meter>
+    </p>
+
+    <p>
+      <button class="button">Button Element</button>
+      <input class="button" type="reset" value="Clear" />
+      <input class="button" type="submit" value="Submit" />
+    </p>
+  </form>
+
+</fieldset>
+
+
+
+<!-- End of Styleguide -->
+ </body>
+</html>
