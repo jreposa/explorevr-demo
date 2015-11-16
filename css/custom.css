@@ -45,7 +45,7 @@ nav{margin-bottom:40px!IMPORTANT;}
   float: left;
   text-decoration: none;
   color: #444;
-  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+ /*  text-shadow: 0 1px 0 rgba(255,255,255,.5); */
   position: relative;
    transform: skew(-20deg);
 }
